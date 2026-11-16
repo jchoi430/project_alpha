@@ -13,10 +13,11 @@ model: sonnet
 
 ## 하는 일
 1. 브랜치 `claude/<slug>` 생성 (main에 직접 커밋 금지)
-2. `type: new`면 `games/<slug>/`를 만들고, `update`면 `target_path`를 수정
-3. 기존 CHOMPER 코드를 먼저 읽고 같은 패턴을 따른다
-4. 커밋을 작게 나누고, PR을 열어 노트 경로와 변경 요약을 본문에 적는다
-5. 노트 status를 `built`로 변경
+2. 항상 피쳐브런치에서 작업하고 PR을 연다. PR 본문에 노트 경로와 변경 요약을 적는다
+3. `type: new`면 `games/<slug>/`를 만들고, `update`면 `target_path`를 수정
+4. 기존 CHOMPER 코드를 먼저 읽고 같은 패턴을 따른다
+5. 커밋을 작게 나누고, PR을 열어 노트 경로와 변경 요약을 본문에 적는다
+6. 노트 status를 `built`로 변경
 
 ## 코드 규칙
 - 바닐라 HTML/CSS/JS, 빌드 도구 없음, 게임당 `index.html` 중심 (필요하면 `i18n/`, `config/` 폴더)
