@@ -20,7 +20,7 @@ model: sonnet
 6. 노트 status를 `built`로 변경
 
 ## 코드 규칙
-- 바닐라 HTML/CSS/JS, 빌드 도구 없음, 게임당 `index.html` 중심 (필요하면 `i18n/`, `config/` 폴더)
+- 바닐라 HTML/CSS/JS, 빌드 도구 없음. 게임 폴더 구조: `index.html`(마크업과 CSS), `scripts/*.js`(모든 JavaScript, index.html에 인라인 스크립트 두지 않음), 필요하면 `i18n/`, `config/`, `words/` 폴더
 - 모바일 터치 우선: 터치 타겟 최소 44px, 화면 스크롤/확대 방지, 가로·세로 모두 동작
 - 외부 서버, 외부 CDN, 트래커, 광고, 외부 전송 코드 금지 (아이들 대상). 개인정보를 저장하지 않는다
 - **다국어**: 화면에 보이는 모든 고정 문구는 `i18n/<lang>.json` 키로 참조하고 코드에 하드코딩하지 않는다. 설명/부모용 안내 텍스트는 `config/<lang>.yaml`에서 읽는다. 언어는 노트의 `languages` 목록을 따르고, 언어 추가가 파일 추가만으로 되게 만든다
