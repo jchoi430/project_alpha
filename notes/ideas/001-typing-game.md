@@ -2,7 +2,7 @@
 id: 001
 slug: typing-game
 title: 타자 게임
-status: approved      # draft → approved → built → tested → deployed  (또는 needs-fix)
+status: built         # draft → approved → built → tested → deployed  (또는 needs-fix)
 target_age: 6-10     # 초등 1~4학년
 languages: [en, ko]  # 세 번째 언어는 나중에 결정
 type: new            # new(새 프로그램) | update(기존 프로그램 수정)
