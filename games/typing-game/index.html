@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, interactive-widget=resizes-content">
+<title>Typing Rain</title>
+<link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<div id="app">
+  <div id="loaderr" hidden></div>
+
+  <section id="start" class="screen" hidden>
+    <div class="scroll">
+      <h1 id="t-title"></h1>
+      <div class="card"><p id="intro"></p></div>
+      <div class="card"><h2 id="t-lang"></h2><div class="row" id="langs"></div></div>
+      <div class="card"><h2 id="t-level"></h2><div class="row" id="levels"></div></div>
+      <button class="big" id="startBtn"></button>
+      <div class="card"><details><summary id="t-howto"></summary><ul id="howto"></ul></details>
+        <details><summary id="t-parent"></summary><ul id="parent"></ul></details></div>
+    </div>
+  </section>
+
+  <section id="play" class="screen" hidden>
+    <div class="hud" aria-live="off">
+      <span><span id="h-time"></span> <b id="time">60</b></span>
+      <span><span id="h-score"></span> <b id="score">0</b></span>
+      <span><span id="h-combo"></span> <b id="combo">0</b></span>
+    </div>
+    <div id="field"></div>
+    <form class="bar" id="form" autocomplete="off">
+      <input id="typebox" type="text" autocomplete="off" autocapitalize="none" autocorrect="off" spellcheck="false" enterkeyhint="done">
+      <button type="submit" id="submit"></button>
+    </form>
+  </section>
+
+  <section id="result" class="screen" hidden>
+    <div class="scroll">
+      <h1 id="r-title"></h1>
+      <div class="card">
+        <div class="stat"><span id="r-score-l"></span><b id="r-score"></b></div>
+        <div class="stat"><span id="r-hit-l"></span><b id="r-hit"></b></div>
+        <div class="stat"><span id="r-miss-l"></span><b id="r-miss"></b></div>
+        <div class="stat"><span id="r-best-l"></span><b id="r-best"></b></div>
+        <p class="newbest" id="r-new" hidden></p>
+      </div>
+      <div class="row result-actions">
+        <button class="big full-row" id="again"></button>
+        <button class="secondary" id="homeBtn"></button>
+      </div>
+    </div>
+  </section>
+</div>
+
+<script src="scripts/game.js"></script>
+</body>
+</html>

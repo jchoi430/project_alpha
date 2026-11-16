@@ -1,0 +1,12 @@
+# Simple YAML: "key: value" and lists of "- item" only.
+intro: Words fall from the sky. Type each word before it touches the ground and pop it!
+how_to:
+  - Type the falling word and it pops. Words that match are chosen automatically.
+  - On a phone, tap the box at the bottom to open the keyboard.
+  - Pop words in a row to build a combo and score more points.
+  - You have 60 seconds. Longer words give more points.
+parent_guide:
+  - This game helps children aged 6 to 10 practice typing common words.
+  - Level 1 uses short sight words, level 2 uses longer words, level 3 uses short sentences.
+  - Letter case does not matter. Nothing is sent anywhere; only best scores are saved on this device.
+  - A physical keyboard is best for real typing practice.
